@@ -1,5 +1,5 @@
 # crmProject
-Next.js ve Bootstrap 5 ile bir yönetim paneli geliştirilmesi.
+Next.js ve Bootstrap 5 
 
 ### server start
 ```bash
