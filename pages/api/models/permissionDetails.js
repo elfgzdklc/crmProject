@@ -1,0 +1,50 @@
+const {DataTypes} = require("sequelize");
+const sequelize = require("../../api/db");
+const PermissionDetails = sequelize.define('permissionDetails', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true
+    },
+    user_id: DataTypes.INTEGER,
+    deleted_id: DataTypes.INTEGER,
+    permission_id: DataTypes.INTEGER,
+    permission_name: DataTypes.STRING,
+    brands: DataTypes.INTEGER,
+    products: DataTypes.INTEGER,
+    product_categories: DataTypes.INTEGER,
+    customers: DataTypes.INTEGER,
+    potential_customers: DataTypes.INTEGER,
+    customer_categories: DataTypes.INTEGER,
+    official_persons: DataTypes.INTEGER,
+    create_offer: DataTypes.INTEGER,
+    pending_offers: DataTypes.INTEGER,
+    approved_offers: DataTypes.INTEGER,
+    rejected_offers: DataTypes.INTEGER,
+    canceled_offers: DataTypes.INTEGER,
+    purchases: DataTypes.INTEGER,
+    create_purchase: DataTypes.INTEGER,
+    pending_sales: DataTypes.INTEGER,
+    realized_sales: DataTypes.INTEGER,
+    after_sales_services: DataTypes.INTEGER,
+    create_after_sales_services: DataTypes.INTEGER,
+    staff_management: DataTypes.INTEGER,
+    reports: DataTypes.INTEGER,
+    transaction_logs: DataTypes.INTEGER,
+    authority_management: DataTypes.INTEGER,
+    department_management: DataTypes.INTEGER,
+    category_management: DataTypes.INTEGER,
+    requests: DataTypes.INTEGER,
+    announcement_management: DataTypes.INTEGER,
+    company_settings: DataTypes.INTEGER,
+    process_pending_offers:DataTypes.INTEGER,
+}, {
+    tableName: 'permission_details',
+    createdAt: 'created_at',
+    updatedAt: 'updated_at',
+    deletedAt: 'deleted_at',
+    paranoid: true,
+    force: false,
+});
+
+module.exports = PermissionDetails;
