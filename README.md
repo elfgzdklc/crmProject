@@ -1,4 +1,4 @@
-# crmProect
+# crmProject
 Next.js ve Bootstrap 5 ile bir yönetim paneli geliştirilmesi.
 
 ### server start
