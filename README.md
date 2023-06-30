@@ -1,13 +1,12 @@
-# Bootsrap Yönetim Paneli
-
+# crmProect
 Next.js ve Bootstrap 5 ile bir yönetim paneli geliştirilmesi.
 
-### Server ayağa kalkdırmak için komut
+### server start
 ```bash
 npm run dev
 ```
 
-### Git cache temizleme
+### Git cache clear
 ```bash
 git rm -rf --cached .
 ```
