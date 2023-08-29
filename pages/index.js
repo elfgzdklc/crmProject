@@ -58,12 +58,11 @@ export default function SignInSide({csrfToken, ipAddress}) {
     const handleFieldChange = (e) => {
         setAuthState(old => ({...old, [e.target.id]: e.target.value}))
     }
-
     const simplifyError = (error) => {
         const errorMap = {
-            'CredentialsSignin': 'Kullanıcı adı veya şifre hatalı.'
+            'CredentialsSignin': 'Kullanıcı adı veya şifre hatalı.3'
         }
-        return errorMap[error] ?? "Hata oluştu."
+        return errorMap[error] || "Hata oluştu."
     }
 
     const handleAuth = async () => {
@@ -77,7 +76,7 @@ export default function SignInSide({csrfToken, ipAddress}) {
                 setPageState(old => ({...old, processing: false, error: response.error}))
             }
         }).catch(error => {
-            setPageState(old => ({...old, processing: false, error: error.message ?? "Hata oluştu."}))
+            setPageState(old => ({...old, processing: false, error: error.message || "Hata oluştu."}))
 
         })
     }
@@ -104,7 +103,6 @@ export default function SignInSide({csrfToken, ipAddress}) {
             </div>
         </div>
     }
-
     if (session) {
         if (session.user.permission_id == 1) {
             window.location.href = "/dashboard";

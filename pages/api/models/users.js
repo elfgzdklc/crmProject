@@ -1,5 +1,5 @@
 const {DataTypes} = require("sequelize");
-const sequelize = require("../../api/db");
+const sequelize = require("../db");
 const Users = sequelize.define('users', {
     id: {
         type: DataTypes.INTEGER,
@@ -31,5 +31,4 @@ const Users = sequelize.define('users', {
     paranoid: true,
     force: false,
 });
-
 module.exports = Users;

@@ -5,13 +5,13 @@
                 "authProtocol": "default"
             },
             "previewLimit": 50,
-            "server": "localhost:3000",
-            "port": 3306,
-            "driver": "MySQL",
+            "server": "127.0.0.1",
+            "port": 5432,
+            "driver": "postgres",
             "name": "crm",
-            "database": "crm",
-            "username": "crm",
-            "password": ""
+            "database": "crm-project",
+            "username": "postgres",
+            "password": "gzde1234"
         }
     ]
 }

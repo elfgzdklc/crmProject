@@ -1,7 +1,8 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
+import fetch from 'node-fetch';
 
-export const authOptions = {
+const options = {
     session: {
         strategy: 'jwt',
         maxAge: 30 * 24 * 60 * 60, // 30 days
@@ -58,29 +59,30 @@ export const authOptions = {
     },
     providers: [
         CredentialsProvider({
-                //name: 'Credentials',
-
-                //type: "credentials",
-                //credentials: {},
-                async authorize(credentials, req) {
-                    const res = await fetch(`${process.env.NEXTAUTH_URL}api/login`, {
+            async authorize(credentials) {
+                const { email, password } = credentials;
+                try {
+                    const response = await fetch(`${process.env.NEXTAUTH_URL}api/login`, {
                         method: 'POST',
-                        body: JSON.stringify(credentials),
                         headers: {
-                            "Content-Type": "application/json"
-                        }
-                    })
-                    const user = await res.json()
-                    if (res.ok && user) {
-                        return user
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({ email, password }),
+                    });
+                    if (response.ok) {
+                        // İstek başarılı, oturum açma başarılı
+                        const user = await response.json();
+                        return user;
+                    } else {
+                        // İstek başarısız, oturum açma başarısız
+                        throw new Error('Kullanıcı adı veya şifre hatalı');
                     }
-                    return null
-                    //else {
-                    //    throw new Error(user.exception);
-                    //}
+                } catch (error) {
+                    // Hata oluştu
+                    throw new Error('Sunucu hatası2');
                 }
             }
-        )
+        })
     ],
     callbacks: {
         session: async ({session, token}) => {
@@ -111,6 +113,6 @@ export const authOptions = {
     secret: process.env.SECRET
 
 }
-
-export default NextAuth(authOptions)
+const Auth = (req, res) => NextAuth(req, res, options)
+export default Auth;
 
