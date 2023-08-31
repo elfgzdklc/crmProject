@@ -314,7 +314,7 @@ function Agenda(props) {
                     </Breadcrumbs>
                 </div>
                 <div className="col-md-5 text-end">
-                    <Button variant="outlined" className="text-capitalize btn-tk" onClick={() => {
+                    <Button variant="outlined" className="text-capitalize btn-custom" onClick={() => {
                         reset2();
                         setValue2("id", 0);
                         setValue2('title', "");
@@ -434,7 +434,7 @@ function Agenda(props) {
                                 <button type="button" className="btn btn-secondary btn-sm me-2" data-bs-dismiss="modal"
                                         onClick={hideEditModals}>Vazgeç
                                 </button>
-                                <button type="submit" className="btn btn-tk-save btn-sm" {...register3("id")}>Kaydet
+                                <button type="submit" className="btn btn-custom-save btn-sm" {...register3("id")}>Kaydet
                                 </button>
                             </div>
                         </div>
@@ -498,7 +498,7 @@ function Agenda(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleClosAddEventModal}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

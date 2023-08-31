@@ -480,31 +480,31 @@ a:active {
     color: rgb(7, 89, 133);
 }
 
-.btn-tk {
+.btn-custom {
     border: 1px solid #156396;
     background-color: white !important;
     color: #156396 !important;
 }
 
-.btn-tk:hover {
+.btn-custom:hover {
     background-color: #156396 !important;
     color: white !important;
     text-decoration: none !important;
 }
 
-.btn-tk-save {
+.btn-custom-save {
     border: 1px solid #156396;
     background-color: #156396 !important;
     color: white !important;
 }
 
-.btn-tk-gold {
+.btn-custom-gold {
     border: 1px solid #B3935D;
     background-color: white !important;
     color: #B3935D !important;
 }
 
-.btn-tk-gold:hover {
+.btn-custom-gold:hover {
     background-color: #B3935D !important;
     color: white !important;
 }
@@ -1078,5 +1078,25 @@ table thead tr th {
         display: none !important;
     }
 }
+
+
+/****************************/
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}
+.h-custom {
+    height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+    .h-custom {
+        height: 100%;
+    }
+}
+
 
 /* end: Breakpoints */

@@ -684,7 +684,7 @@ function PandingSales(props) {
                         <Button variant="secondary btn-sm" onClick={handleCloseSales}>
                             Kapat
                         </Button>
-                        <Button variant="btn btn-tk-save btn-sm" type="submit">Satışı Onayla</Button>
+                        <Button variant="btn btn-custom-save btn-sm" type="submit">Satışı Onayla</Button>
                     </Modal.Footer>
                 </form>
             </Modal>
@@ -700,7 +700,7 @@ function PandingSales(props) {
                                     <table>
                                         <tbody>
                                         <tr>
-                                            <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                            <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                         </tr>
                                         <tr>
                                             <th>Committed to Quality...</th>
@@ -904,7 +904,7 @@ function PandingSales(props) {
                         <Button variant="secondary btn-sm" onClick={handleClose}>
                             Kapat
                         </Button>
-                        <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(salesOnly.id, bankDetails)}>
+                        <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(salesOnly.id, bankDetails)}>
                             PDF
                         </a>
                     </Modal.Footer>

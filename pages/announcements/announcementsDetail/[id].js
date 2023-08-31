@@ -75,7 +75,7 @@ function AnnouncementsDetail({announDetails, id,token}) {
 
                                 <div className="text-end mt-3">
                                     <Link href="../../announcements">
-                                        <a className="btn btn-tk btn-sm "><i className="far fa-undo me-1"></i> Geri Dön</a>
+                                        <a className="btn btn-custom btn-sm "><i className="far fa-undo me-1"></i> Geri Dön</a>
                                     </Link>
 
                                 </div>

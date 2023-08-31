@@ -36,7 +36,7 @@ export default function Sidebar(props) {
                             <div className="d-flex align-items-center p-3">
                                 <Link href="/dashboard">
                                     <a className="sidebar-logo  fw-bold text-decoration-none text-indigo fs-4">
-                                        <img className="img-fluid" src="/public/logo.png" alt=""/>
+                                        <img className="img-fluid" src="/public/assets/img/logo.png" alt=""/>
                                     </a>
                                 </Link>
                                 <i className="sidebar-toggle ri-arrow-left-circle-line ms-auto fs-5 d-none d-md-block"/>
@@ -46,7 +46,7 @@ export default function Sidebar(props) {
                             <div className="d-flex align-items-center p-3">
                                 <Link href="/userDashboard">
                                     <a className="sidebar-logo  fw-bold text-decoration-none text-indigo fs-4">
-                                        <img className="img-fluid" src="/public/logo.png" alt=""/>
+                                        <img className="img-fluid" src="/public/assets/img/logo.png" alt=""/>
                                     </a>
                                 </Link>
                                 <i className="sidebar-toggle ri-arrow-left-circle-line ms-auto fs-5 d-none d-md-block"/>

@@ -683,7 +683,7 @@ function Customers(props) {
                 <div className="row  w-100">
                     <div className="col-md-8 col-12 mb-2 mb-md-0">
                         <h5 className="fw-bold mb-0">
-                            <Button variant="outlined" className="text-capitalize btn-tk btn-sm mb-2 mb-md-0"
+                            <Button variant="outlined" className="text-capitalize btn-custom btn-sm mb-2 mb-md-0"
                                     onClick={() => {
                                         reset();
                                         setValue("id", 0);
@@ -709,7 +709,7 @@ function Customers(props) {
                             {
                                 userLiable === 1 ? (
                                     <Button variant="outlined" type="button"
-                                            className="text-capitalize btn-tk btn-sm mx-2  mb-2 mb-md-0 mbl-ms-0"
+                                            className="text-capitalize btn-custom btn-sm mx-2  mb-2 mb-md-0 mbl-ms-0"
                                             onClick={() => {
                                                 resetAssignment();
                                                 asyncGetCustomers("")
@@ -720,7 +720,7 @@ function Customers(props) {
                             }
                             {
                                 userLiable === 1 ? (
-                                    <Button variant="outlined" className="text-capitalize btn-tk btn-sm  mb-2 mb-md-0"
+                                    <Button variant="outlined" className="text-capitalize btn-custom btn-sm  mb-2 mb-md-0"
                                             onClick={() => {
                                                 resetRequest();
                                                 setValueRequest("description", "");
@@ -1316,7 +1316,7 @@ function Customers(props) {
                                 onClick={handleCloseCustomers}>Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1417,7 +1417,7 @@ function Customers(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleCloseUserCustomerModal}>Vazgeç
                         </button>
-                        <button type="submit" form="2" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" form="2" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1520,7 +1520,7 @@ function Customers(props) {
                                 onClick={handleCloseUserCustomerModalDetail}>Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1577,7 +1577,7 @@ function Customers(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleCloseCustomerOfficial}>Vazgeç
                         </button>
-                        <button type="submit" form="4" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" form="4" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1744,7 +1744,7 @@ function Customers(props) {
                                 onClick={handleCloseShippingAddress}>Vazgeç
                         </button>
                         <button type="submit" form="5"
-                                className="btn btn-tk-save btn-sm" {...registerShippingAddress("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...registerShippingAddress("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

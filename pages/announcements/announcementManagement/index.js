@@ -228,7 +228,7 @@ function AnnouncementManagement(props) {
                     <div className="row w-100">
                         <div className="col-md-4 col-12 mb-2 mb-md-0">
                             <h5 className="fw-bold mb-0">
-                                <Button variant="outlined" className="text-capitalize btn-tk"
+                                <Button variant="outlined" className="text-capitalize btn-custom"
                                         onClick={() => {
                                             resetAnnoun();
                                             setValueAnnoun('id', 0);
@@ -459,7 +459,7 @@ function AnnouncementManagement(props) {
                             Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...registerAnnoun("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...registerAnnoun("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

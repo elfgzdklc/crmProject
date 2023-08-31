@@ -1653,7 +1653,7 @@ function PendingOffers(props) {
                         <Button variant="secondary" onClick={handleCloseRevised}>
                             Vazgeç
                         </Button>
-                        <Button variant="outline" className="btn-tk-save"
+                        <Button variant="outline" className="btn-custom-save"
                                 type="submit" {...register('id')}>Kaydet</Button>
                     </Modal.Footer>
                 </form>
@@ -1670,7 +1670,7 @@ function PendingOffers(props) {
                                 <table style={{marginTop: "1em"}}>
                                     <tbody>
                                     <tr>
-                                        <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                        <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                     </tr>
                                     <tr>
                                         <th>Committed to Quality...</th>
@@ -1900,10 +1900,10 @@ function PendingOffers(props) {
                     <Button variant="secondary btn-sm" onClick={handleClose}>
                         Kapat
                     </Button>
-                    <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), bankDetails, "QUOTATION")}>
+                    <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), bankDetails, "QUOTATION")}>
                         QUOTATION PDF
                     </a>
-                    <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), bankDetails, "PROFORMA")}>
+                    <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), bankDetails, "PROFORMA")}>
                         PROFORMA PDF
                     </a>
                 </Modal.Footer>
@@ -1921,7 +1921,7 @@ function PendingOffers(props) {
                                 <table>
                                     <tbody>
                                     <tr>
-                                        <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                        <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                     </tr>
                                     <tr>
                                         <th>Committed to Quality...</th>
@@ -2130,10 +2130,10 @@ function PendingOffers(props) {
                     <Button variant="secondary btn-sm" onClick={handleCloseRevisedQuotation}>
                         Kapat
                     </Button>
-                    <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, "QUOTATION")}>
+                    <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, "QUOTATION")}>
                         QUOTATION PDF
                     </a>
-                    <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, "PROFORMA")}>
+                    <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, "PROFORMA")}>
                         PROFORMA PDF
                     </a>
                 </Modal.Footer>

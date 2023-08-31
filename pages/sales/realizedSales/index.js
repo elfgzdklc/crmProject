@@ -716,7 +716,7 @@ function RealizedSalaes(props) {
                             <table>
                                 <tbody>
                                 <tr>
-                                    <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                    <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                 </tr>
                                 <tr>
                                     <th>Committed to Quality...</th>
@@ -917,7 +917,7 @@ function RealizedSalaes(props) {
                 <Button variant="secondary btn-sm" onClick={handleClose}>
                     Kapat
                 </Button>
-                <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), "COMMERCIAL-INVOICE-")}>
+                <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), "COMMERCIAL-INVOICE-")}>
                     PDF
                 </a>
             </Modal.Footer>
@@ -1041,7 +1041,7 @@ function RealizedSalaes(props) {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary btn-sm" onClick={handleClosePackingCreate}> Kapat </Button>
-                    <Button variant="outline" className="btn-tk-save btn-sm" type="submit" {...register('id')}>Kaydet</Button>
+                    <Button variant="outline" className="btn-custom-save btn-sm" type="submit" {...register('id')}>Kaydet</Button>
                 </Modal.Footer>
             </form>
         </Modal>
@@ -1056,7 +1056,7 @@ function RealizedSalaes(props) {
                             <table>
                                 <tbody>
                                 <tr>
-                                    <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                    <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                 </tr>
                                 <tr>
                                     <th>Committed to Quality...</th>
@@ -1220,7 +1220,7 @@ function RealizedSalaes(props) {
                 >
                     Düzenle
                 </Button>
-                <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), "PACKING-LIST-")}>
+                <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(getValues('id'), "PACKING-LIST-")}>
                     PDF
                 </a>
             </Modal.Footer>

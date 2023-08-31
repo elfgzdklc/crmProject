@@ -369,7 +369,7 @@ function CreateAfterSalesService(props) {
                                 className="form-control form-control-sm textareaHeightDescription" {...register("description")}/>
                         </div>
                         <div className="d-flex justify-content-end mb-2 mt-2">
-                            <button type="submit" className="btn btn-tk-save btn-sm">Kaydet</button>
+                            <button type="submit" className="btn btn-custom-save btn-sm">Kaydet</button>
                         </div>
                     </div>
                 </div>

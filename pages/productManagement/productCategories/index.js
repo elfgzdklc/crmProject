@@ -178,7 +178,7 @@ function Index(props) {
                 <div className="row w-100">
                     <div className="col-md-4 col-12 mb-2 mb-md-0">
                         <h5 className="fw-bold mb-0">
-                            <Button variant="outlined" className="text-capitalize btn-tk" onClick={() => {
+                            <Button variant="outlined" className="text-capitalize btn-custom" onClick={() => {
                                 reset()
                                 setValue("id", 0)
                                 handleShow()
@@ -303,7 +303,7 @@ function Index(props) {
                         <button type="button" className="btn btn-secondary btn-sm" onClick={handleClose}
                         >Vazgeç
                         </button>
-                        <button className="btn-tk-save btn-sm" type="submit" {...register('id')}>Kaydet</button>
+                        <button className="btn-custom-save btn-sm" type="submit" {...register('id')}>Kaydet</button>
                     </Modal.Footer>
                 </form>
             </Modal>

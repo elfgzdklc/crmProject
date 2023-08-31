@@ -183,7 +183,7 @@ function AuthorityManagement(props) {
                 <div className="row w-100">
                     <div className="col-md-4 col-12 mb-2 mb-md-0">
                         <h5 className="fw-bold mb-0">
-                            <Button variant="outlined" className="text-capitalize btn-tk" onClick={() => {
+                            <Button variant="outlined" className="text-capitalize btn-custom" onClick={() => {
                                 reset();
                                 setValue("id", 0);
                                 handleShowAuthority();
@@ -316,7 +316,7 @@ function AuthorityManagement(props) {
                                 onClick={handleCloseAuthority}>Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

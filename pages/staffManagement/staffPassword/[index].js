@@ -101,7 +101,7 @@ function StaffPassword({code}) {
                     <div className="mt-5">
                         <div className="row mx-0 d-flex justify-content-center">
                             <div className="col-12 d-flex justify-content-center">
-                                <img src="/public/logo.png" style={{width: "17%"}} className="img-fluid"
+                                <img src="/public/assets/img/logo.png" style={{width: "17%"}} className="img-fluid"
                                      layout={"raw"}
                                      alt={"Logo"}/>
                             </div>

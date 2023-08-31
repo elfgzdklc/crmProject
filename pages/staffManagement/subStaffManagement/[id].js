@@ -237,7 +237,7 @@ function SubStaffManagement({ id, token }) {
                     <div className="row w-100">
                         <div className="col-md-4 col-12 mb-2 mb-md-0">
                             <h5 className="fw-bold mb-0">
-                                <Button variant="outlined" className="text-capitalize btn-tk"
+                                <Button variant="outlined" className="text-capitalize btn-custom"
                                     onClick={() => {
                                         reset();
                                         setValue("id", 0);
@@ -606,7 +606,7 @@ function SubStaffManagement({ id, token }) {
                     <Modal.Footer>
                         <button type="button" className="btn btn-secondary btn-sm" onClick={handleCloseAddModal}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -689,7 +689,7 @@ function SubStaffManagement({ id, token }) {
                         <button type="button" className="btn btn-secondary btn-sm"
                             onClick={handleClosePassModal}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm" {...registerPass("id")}>Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm" {...registerPass("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

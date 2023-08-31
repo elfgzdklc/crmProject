@@ -1170,7 +1170,7 @@ function CreatePurchase(props) {
                                     </tfoot>
                                 </table>
                                 <div className="d-flex justify-content-end">
-                                    <button type="submit" className="btn btn-tk-save btn-sm">Kaydet</button>
+                                    <button type="submit" className="btn btn-custom-save btn-sm">Kaydet</button>
                                 </div>
                             </div>
                         </div>
@@ -1381,7 +1381,7 @@ function CreatePurchase(props) {
                         <Button variant="secondary btn-sm" onClick={handleClose}>
                             Vazgeç
                         </Button>
-                        <Button variant="outline" className="btn-tk-save btn-sm" type="submit" {...registerProduct('id')}>Kaydet</Button>
+                        <Button variant="outline" className="btn-custom-save btn-sm" type="submit" {...registerProduct('id')}>Kaydet</Button>
                     </Modal.Footer>
                 </form>
             </Modal>

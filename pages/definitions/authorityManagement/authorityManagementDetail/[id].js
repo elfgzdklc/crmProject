@@ -345,7 +345,7 @@ function AuthorityManagementDetail({permissionDetail, id, token}) {
                                             <a type="button" className="btn btn-secondary btn-sm"
                                                href={'/definitions/authorityManagement/'}>Vazgeç
                                             </a>
-                                            <button type="submit" className="btn btn-tk-save btn-sm ms-1">Kaydet
+                                            <button type="submit" className="btn btn-custom-save btn-sm ms-1">Kaydet
                                             </button>
                                         </div>
                                     </form>

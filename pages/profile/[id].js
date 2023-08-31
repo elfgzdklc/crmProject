@@ -290,7 +290,7 @@ function Profile(props) {
                                             </div>
                                         </div>
                                         <div className="col-12 mt-4 text-end">
-                                            <button type="submit" className="btn btn-tk-save btn-sm me-2">Güncelle
+                                            <button type="submit" className="btn btn-custom-save btn-sm me-2">Güncelle
                                             </button>
                                         </div>
                                     </div>
@@ -349,7 +349,7 @@ function Profile(props) {
 
                                     </div>
                                     <div className="col-12 mt-4 text-end">
-                                        <button type="submit" className="btn btn-tk-save btn-sm me-2">Değiştir</button>
+                                        <button type="submit" className="btn btn-custom-save btn-sm me-2">Değiştir</button>
                                     </div>
 
                                 </div>

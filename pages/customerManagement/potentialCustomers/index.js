@@ -656,7 +656,7 @@ function PotentialCustomer(props) {
                 <div className="row  w-100">
                     <div className="col-md-8 col-12 mb-2 mb-md-0">
                         <h5 className="fw-bold mb-0">
-                            <Button variant="outlined" className="text-capitalize btn-tk  mb-2 mb-md-0"
+                            <Button variant="outlined" className="text-capitalize btn-custom  mb-2 mb-md-0"
                                     onClick={() => {
                                         reset();
                                         setValue("id", 0);
@@ -680,7 +680,7 @@ function PotentialCustomer(props) {
                             {
                                 userLiable === 1 ? (
                                     <Button variant="outlined"
-                                            className="text-capitalize btn-tk mx-2 mb-2 mb-md-0 mbl-ms-0"
+                                            className="text-capitalize btn-custom mx-2 mb-2 mb-md-0 mbl-ms-0"
                                             onClick={() => {
                                                 resetAssignment();
                                                 asyncGetCustomers("")
@@ -691,7 +691,7 @@ function PotentialCustomer(props) {
                             }
                             {
                                 userLiable === 1 ? (
-                                    <Button variant="outlined" className="text-capitalize btn-tk  mb-2 mb-md-0"
+                                    <Button variant="outlined" className="text-capitalize btn-custom  mb-2 mb-md-0"
                                             onClick={() => {
                                                 resetRequest();
                                                 setValueRequest("description", " ");
@@ -1298,7 +1298,7 @@ function PotentialCustomer(props) {
                                 onClick={handleClosePotentialCustomers}>Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1395,7 +1395,7 @@ function PotentialCustomer(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleCloseMeeting}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1501,7 +1501,7 @@ function PotentialCustomer(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleCloseUserCustomerModal}>Vazgeç
                         </button>
-                        <button type="submit" form="2" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" form="2" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1604,7 +1604,7 @@ function PotentialCustomer(props) {
                                 onClick={handleCloseUserCustomerModalDetail}>Vazgeç
                         </button>
                         <button type="submit"
-                                className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                                className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -1661,7 +1661,7 @@ function PotentialCustomer(props) {
                         <button type="button" className="btn btn-secondary btn-sm"
                                 onClick={handleCloseCustomerOfficial}>Vazgeç
                         </button>
-                        <button type="submit" form="4" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" form="4" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

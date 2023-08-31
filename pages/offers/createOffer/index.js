@@ -1512,7 +1512,7 @@ function CreateOffer(props) {
                                     </tr>
                                 </table>
                                 <div className="d-flex justify-content-end pt-3">
-                                    <button type="submit" className="btn btn-tk-save btn-sm">Kaydet</button>
+                                    <button type="submit" className="btn btn-custom-save btn-sm">Kaydet</button>
                                 </div>
                             </div>
                         </div>
@@ -1531,7 +1531,7 @@ function CreateOffer(props) {
                                     <table style={{marginTop: "1em"}}>
                                         <tbody>
                                         <tr>
-                                            <img className="img-fluid" src="/public/logo.png" alt="crm"/>
+                                            <img className="img-fluid" src="/public/assets/img/logo.png" alt="crm"/>
                                         </tr>
                                         <tr>
                                             <th>Committed to Quality...</th>
@@ -1759,7 +1759,7 @@ function CreateOffer(props) {
                         <Button variant="secondary btn-sm" onClick={handleClose}>
                             Kapat
                         </Button>
-                        <a className="btn btn-tk-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, pdfTitle)}>
+                        <a className="btn btn-custom-save btn-sm" title="PDF Oluştur" onClick={() => createPDF(offer.id, bankDetails, pdfTitle)}>
                             PDF
                         </a>
                     </Modal.Footer>

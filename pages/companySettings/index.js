@@ -459,7 +459,7 @@ function CompanySettings(props) {
                             </div>
                         </div>
                         <div className="col-12 text-end mt-3">
-                            <button type="submit" className="btn btn-tk-save btn-sm">Güncelle
+                            <button type="submit" className="btn btn-custom-save btn-sm">Güncelle
                             </button>
                         </div>
                     </div>

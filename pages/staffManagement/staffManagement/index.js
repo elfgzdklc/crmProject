@@ -299,7 +299,7 @@ function StaffManagements(props) {
 
                                 {
                                     permission_id == 1 ? (
-                                        <Button variant="outlined" className="text-capitalize btn-tk"
+                                        <Button variant="outlined" className="text-capitalize btn-custom"
                                                 onClick={() => {
                                                     reset();
                                                     setValue("id", 0);
@@ -645,7 +645,7 @@ function StaffManagements(props) {
                     <Modal.Footer>
                         <button type="button" className="btn btn-secondary btn-sm" onClick={handleClosePassModal}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm" {...registerPass("id")}>Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm" {...registerPass("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
@@ -842,7 +842,7 @@ function StaffManagements(props) {
                         <button type="button" className="btn btn-secondary btn-sm" onClick={handleCloseAddModal}
                         >Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm" {...register("id")}>Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm" {...register("id")}>Kaydet
                         </button>
                     </Modal.Footer>
                 </form>

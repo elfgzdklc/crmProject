@@ -512,12 +512,12 @@ function Dashboard(props) {
                                         <div className="card-body">
                                             <div className="col-12 text-end mb-3">
                                                 <Link href={`/agenda`}>
-                                                    <a className="btn btn-tk-gold text-decoration-none btn-sm me-2">
-                                                        <i className="far fa-calendar-alt me-1 btn-tk-gold border-0"></i>
+                                                    <a className="btn btn-custom-gold text-decoration-none btn-sm me-2">
+                                                        <i className="far fa-calendar-alt me-1 btn-custom-gold border-0"></i>
                                                         Ajanda
                                                     </a>
                                                 </Link>
-                                                <button className="btn btn-tk btn-sm" onClick={() => {
+                                                <button className="btn btn-custom btn-sm" onClick={() => {
                                                     reset();
                                                     handleShowAddEventModal();
                                                 }}>
@@ -640,7 +640,7 @@ function Dashboard(props) {
                             <button type="button" className="btn btn-secondary btn-sm"
                                     onClick={handleClosAddEventModal}>Vazgeç
                             </button>
-                            <button type="submit" className="btn btn-tk-save btn-sm">Kaydet
+                            <button type="submit" className="btn btn-custom-save btn-sm">Kaydet
                             </button>
                         </Modal.Footer>
                     </form>

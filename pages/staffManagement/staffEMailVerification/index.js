@@ -8,9 +8,9 @@ function StaffEMailVerification() {
                 <div className="mt-5">
                     <div className="row mx-0 d-flex justify-content-center">
                         <div className="col-12 d-flex justify-content-center">
-                            <img src="/public/logo.png" style={{width:"17%"}} className="img-fluid"
-                                   layout={"raw"}
-                                   alt={"Logo"}/>
+                            <img src="/public/assets/img/logo.png" style={{width:"17%"}} className="img-fluid"
+                                 layout={"raw"}
+                                 alt={"Logo"}/>
                         </div>
                         <div className="col-5 pt-5">
                             <div className="card pt-4 pb-5 shadow">

@@ -120,7 +120,7 @@ export default function Layout({children}) {
                                                         Sayın  {session.user.name_surname};  {d.title} konusunda hatırlatmanız bulunuyor!
                                                     </p>
                                                     <br/>
-                                                    <button className="btn btn-tk-gold" type="submit" onClick={handleClose2}>Gördüm</button>
+                                                    <button className="btn btn-custom-gold" type="submit" onClick={handleClose2}>Gördüm</button>
                                                     <div>
                                                         <audio autoPlay src="https://ia800203.us.archive.org/14/items/slack_sfx/been_tree.mp3">
                                                         </audio>

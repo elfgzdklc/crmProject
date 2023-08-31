@@ -504,7 +504,7 @@ function CustomerMeetings({customerMeetings, id, token}) {
                         <button type="button" className="btn btn-secondary btn-sm me-2" data-bs-dismiss="modal"
                                 onClick={handleClose}>Vazgeç
                         </button>
-                        <button type="submit" className="btn btn-tk-save btn-sm">Kaydet
+                        <button type="submit" className="btn btn-custom-save btn-sm">Kaydet
                         </button>
                     </Modal.Footer>
                 </form>
